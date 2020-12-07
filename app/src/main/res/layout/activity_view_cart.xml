@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewCart">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:title="My Cart"
+        app:titleTextColor="@color/white"
+        android:background="@color/purple_700"/>
+
+    <TextView
+        android:id="@+id/noitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="There are no items added in cart"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginVertical="20dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="#ECF1F8"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/one"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakeone"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Rainbow Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/two"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/caketwo"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Rich Chocolate Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/three"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakethree"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@color/purple_500"
+                        android:text="Vanilla Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/four"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakefour"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Gems Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/five"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakefive"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Rose Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/six"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakesix"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Strawberry Chocolate Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/seven"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakeseven"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Colourful Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/eight"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/light1">
+
+                <LinearLayout
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cakeeight"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:lines="2"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_500"
+                        android:text="Two in One Cake"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
